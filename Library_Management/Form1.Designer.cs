@@ -42,10 +42,27 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.display = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtauthor = new System.Windows.Forms.TextBox();
+            this.txtpublisher = new System.Windows.Forms.TextBox();
+            this.txtquantity = new System.Windows.Forms.TextBox();
+            this.txtisbn = new System.Windows.Forms.TextBox();
+            this.txttitle = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.display.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -87,6 +104,7 @@
             this.iconButton6.Text = "LOG OUT ";
             this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton6.UseVisualStyleBackColor = false;
+            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
             // 
             // iconButton5
             // 
@@ -109,6 +127,7 @@
             this.iconButton5.Text = "RETURN BOOK";
             this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton5.UseVisualStyleBackColor = false;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
             // iconButton4
             // 
@@ -131,6 +150,7 @@
             this.iconButton4.Text = "ISSUE BOOK";
             this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton4.UseVisualStyleBackColor = false;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
             // 
             // iconButton3
             // 
@@ -153,6 +173,7 @@
             this.iconButton3.Text = "   LIST  BOOK ";
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // iconButton2
             // 
@@ -175,6 +196,7 @@
             this.iconButton2.Text = "BORROWER";
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // iconButton1
             // 
@@ -261,10 +283,154 @@
             // display
             // 
             this.display.BackColor = System.Drawing.Color.White;
+            this.display.Controls.Add(this.dataGridView1);
+            this.display.Controls.Add(this.panel4);
             this.display.Location = new System.Drawing.Point(169, 25);
             this.display.Name = "display";
             this.display.Size = new System.Drawing.Size(644, 377);
             this.display.TabIndex = 2;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(2, 112);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(640, 261);
+            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.txtauthor);
+            this.panel4.Controls.Add(this.txtpublisher);
+            this.panel4.Controls.Add(this.txtquantity);
+            this.panel4.Controls.Add(this.txtisbn);
+            this.panel4.Controls.Add(this.txttitle);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Location = new System.Drawing.Point(2, 1);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(640, 108);
+            this.panel4.TabIndex = 1;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.MintCream;
+            this.button3.ForeColor = System.Drawing.Color.Red;
+            this.button3.Location = new System.Drawing.Point(21, 66);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(236, 30);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "LIST BOOK";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.MintCream;
+            this.button1.ForeColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(379, 66);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(236, 30);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "SAVE BOOK";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtauthor
+            // 
+            this.txtauthor.Location = new System.Drawing.Point(136, 40);
+            this.txtauthor.Name = "txtauthor";
+            this.txtauthor.Size = new System.Drawing.Size(106, 20);
+            this.txtauthor.TabIndex = 9;
+            // 
+            // txtpublisher
+            // 
+            this.txtpublisher.Location = new System.Drawing.Point(513, 40);
+            this.txtpublisher.Name = "txtpublisher";
+            this.txtpublisher.Size = new System.Drawing.Size(102, 20);
+            this.txtpublisher.TabIndex = 8;
+            // 
+            // txtquantity
+            // 
+            this.txtquantity.Location = new System.Drawing.Point(391, 40);
+            this.txtquantity.Name = "txtquantity";
+            this.txtquantity.Size = new System.Drawing.Size(102, 20);
+            this.txtquantity.TabIndex = 7;
+            // 
+            // txtisbn
+            // 
+            this.txtisbn.Location = new System.Drawing.Point(263, 40);
+            this.txtisbn.Name = "txtisbn";
+            this.txtisbn.Size = new System.Drawing.Size(102, 20);
+            this.txtisbn.TabIndex = 6;
+            // 
+            // txttitle
+            // 
+            this.txttitle.Location = new System.Drawing.Point(3, 40);
+            this.txttitle.Name = "txttitle";
+            this.txttitle.Size = new System.Drawing.Size(106, 20);
+            this.txttitle.TabIndex = 5;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.IndianRed;
+            this.label7.Location = new System.Drawing.Point(510, 10);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(96, 17);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "PUBLISHER";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.IndianRed;
+            this.label6.Location = new System.Drawing.Point(388, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(89, 17);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "QUANTITY";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.IndianRed;
+            this.label5.Location = new System.Drawing.Point(132, 10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(125, 17);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "BOOK AUTHOR";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.IndianRed;
+            this.label4.Location = new System.Drawing.Point(302, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 17);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "ISBN";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.IndianRed;
+            this.label3.Location = new System.Drawing.Point(4, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 17);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "BOOK TITLE";
             // 
             // Form1
             // 
@@ -281,6 +447,10 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.display.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -300,6 +470,20 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel display;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtauthor;
+        private System.Windows.Forms.TextBox txtpublisher;
+        private System.Windows.Forms.TextBox txtquantity;
+        private System.Windows.Forms.TextBox txtisbn;
+        private System.Windows.Forms.TextBox txttitle;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button3;
     }
 }
 

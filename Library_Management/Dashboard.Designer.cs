@@ -1,6 +1,6 @@
 ﻿namespace Library_Management
 {
-    partial class Borrower
+    partial class Dashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Borrower));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.display = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.txtname = new System.Windows.Forms.TextBox();
-            this.txtyear = new System.Windows.Forms.TextBox();
-            this.txtmajor = new System.Windows.Forms.TextBox();
-            this.txtisbn = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -54,12 +50,8 @@
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.txtdate = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.display.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -74,144 +66,115 @@
             this.panel1.Location = new System.Drawing.Point(-6, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(813, 402);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 3;
             // 
             // display
             // 
             this.display.BackColor = System.Drawing.Color.White;
-            this.display.Controls.Add(this.dataGridView1);
-            this.display.Controls.Add(this.panel4);
+            this.display.Controls.Add(this.label10);
+            this.display.Controls.Add(this.label9);
+            this.display.Controls.Add(this.label8);
+            this.display.Controls.Add(this.label7);
+            this.display.Controls.Add(this.label6);
+            this.display.Controls.Add(this.label5);
+            this.display.Controls.Add(this.label4);
+            this.display.Controls.Add(this.label3);
             this.display.Location = new System.Drawing.Point(169, 25);
             this.display.Name = "display";
             this.display.Size = new System.Drawing.Size(644, 377);
             this.display.TabIndex = 2;
             // 
-            // dataGridView1
+            // label10
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 112);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(640, 261);
-            this.dataGridView1.TabIndex = 2;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.IndianRed;
+            this.label10.Location = new System.Drawing.Point(56, 217);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(98, 24);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "14 People";
             // 
-            // panel4
+            // label9
             // 
-            this.panel4.Controls.Add(this.txtdate);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.button3);
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Controls.Add(this.txtname);
-            this.panel4.Controls.Add(this.txtyear);
-            this.panel4.Controls.Add(this.txtmajor);
-            this.panel4.Controls.Add(this.txtisbn);
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(-4, 1);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(640, 108);
-            this.panel4.TabIndex = 1;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.IndianRed;
+            this.label9.Location = new System.Drawing.Point(410, 222);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(93, 24);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "45 Books";
             // 
-            // button3
+            // label8
             // 
-            this.button3.BackColor = System.Drawing.Color.MintCream;
-            this.button3.ForeColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(21, 66);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(236, 30);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "BORROWER LIST";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.MintCream;
-            this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(379, 66);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(236, 30);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "SAVE BORROWER";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // txtname
-            // 
-            this.txtname.Location = new System.Drawing.Point(19, 40);
-            this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(106, 20);
-            this.txtname.TabIndex = 9;
-            this.txtname.TextChanged += new System.EventHandler(this.txtname_TextChanged);
-            // 
-            // txtyear
-            // 
-            this.txtyear.Location = new System.Drawing.Point(396, 40);
-            this.txtyear.Name = "txtyear";
-            this.txtyear.Size = new System.Drawing.Size(102, 20);
-            this.txtyear.TabIndex = 8;
-            // 
-            // txtmajor
-            // 
-            this.txtmajor.Location = new System.Drawing.Point(274, 40);
-            this.txtmajor.Name = "txtmajor";
-            this.txtmajor.Size = new System.Drawing.Size(102, 20);
-            this.txtmajor.TabIndex = 7;
-            // 
-            // txtisbn
-            // 
-            this.txtisbn.Location = new System.Drawing.Point(146, 40);
-            this.txtisbn.Name = "txtisbn";
-            this.txtisbn.Size = new System.Drawing.Size(102, 20);
-            this.txtisbn.TabIndex = 6;
-            this.txtisbn.TextChanged += new System.EventHandler(this.txtisbn_TextChanged);
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.IndianRed;
+            this.label8.Location = new System.Drawing.Point(240, 216);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(104, 24);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "756 Books";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.IndianRed;
-            this.label7.Location = new System.Drawing.Point(393, 10);
+            this.label7.Location = new System.Drawing.Point(213, 105);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 17);
+            this.label7.Size = new System.Drawing.Size(174, 24);
             this.label7.TabIndex = 4;
-            this.label7.Text = "YEAR STUDY";
+            this.label7.Text = "MS.CHANIROTH";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.IndianRed;
-            this.label6.Location = new System.Drawing.Point(271, 10);
+            this.label6.BackColor = System.Drawing.Color.Blue;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(423, 176);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 17);
+            this.label6.Size = new System.Drawing.Size(80, 26);
             this.label6.TabIndex = 3;
-            this.label6.Text = "MAJOR";
+            this.label6.Text = "ISSUE";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.IndianRed;
-            this.label5.Location = new System.Drawing.Point(42, 10);
+            this.label5.BackColor = System.Drawing.Color.Blue;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(46, 176);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 17);
+            this.label5.Size = new System.Drawing.Size(156, 26);
             this.label5.TabIndex = 2;
-            this.label5.Text = "NAME";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.label5.Text = "BORROWER";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.IndianRed;
-            this.label4.Location = new System.Drawing.Point(185, 10);
+            this.label4.BackColor = System.Drawing.Color.Blue;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(258, 176);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 17);
+            this.label4.Size = new System.Drawing.Size(85, 26);
             this.label4.TabIndex = 1;
-            this.label4.Text = "ISBN";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label4.Text = "BOOK";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Blue;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(231, 53);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 26);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "LIBRARIEN";
             // 
             // panel3
             // 
@@ -228,9 +191,9 @@
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(223, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 19);
+            this.label2.Size = new System.Drawing.Size(110, 19);
             this.label2.TabIndex = 2;
-            this.label2.Text = "BORROWER LIST";
+            this.label2.Text = "DASHBOARD";
             // 
             // panel2
             // 
@@ -340,7 +303,7 @@
             this.iconButton3.Text = "   LIST  BOOK ";
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = false;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click_1);
             // 
             // iconButton2
             // 
@@ -386,7 +349,7 @@
             this.iconButton1.Text = "DASHBOARD";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_2);
             // 
             // label1
             // 
@@ -416,38 +379,18 @@
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
             // 
-            // txtdate
-            // 
-            this.txtdate.Location = new System.Drawing.Point(517, 40);
-            this.txtdate.Name = "txtdate";
-            this.txtdate.Size = new System.Drawing.Size(102, 20);
-            this.txtdate.TabIndex = 14;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.IndianRed;
-            this.label3.Location = new System.Drawing.Point(541, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 17);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Date";
-            // 
-            // Borrower
+            // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 404);
+            this.ClientSize = new System.Drawing.Size(800, 403);
             this.Controls.Add(this.panel1);
-            this.Name = "Borrower";
-            this.Text = "ListBook";
-            this.Load += new System.EventHandler(this.Borrower_Load);
+            this.Name = "Dashboard";
+            this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.display.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.display.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -461,20 +404,16 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel display;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtname;
-        private System.Windows.Forms.TextBox txtyear;
-        private System.Windows.Forms.TextBox txtmajor;
-        private System.Windows.Forms.TextBox txtisbn;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel2;
         private FontAwesome.Sharp.IconButton iconButton6;
         private FontAwesome.Sharp.IconButton iconButton5;
@@ -484,7 +423,5 @@
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private System.Windows.Forms.TextBox txtdate;
-        private System.Windows.Forms.Label label3;
     }
 }
